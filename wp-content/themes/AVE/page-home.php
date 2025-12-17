@@ -9,7 +9,7 @@ $first_section_banner_description_one = get_field('first_section_banner_descript
 $first_section_banner_title_two = get_field('first_section_banner_title_two');
 $first_section_banner_description_two = get_field('first_section_banner_description_two');
 
-$section_one_image_url = get_field('section_one_image_url');
+$section_one_image_ = get_field('section_one_image_');
 
 ?>
 
@@ -26,11 +26,11 @@ $section_one_image_url = get_field('section_one_image_url');
 							<!-- SLIDE  -->
 							<li data-index="rs-1" data-transition="crossfade" data-slotamount="default" data-hideafterloop="0"
 								data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default"
-								data-thumb="<?php echo $section_one_image_url; ?>" data-rotate="0" data-saveperformance="off" data-title="Virtus"
+								data-thumb="<?php echo $section_one_image_; ?>" data-rotate="0" data-saveperformance="off" data-title="Virtus"
 								data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
 								data-param8="" data-param9="" data-param10="" data-description="">
 								<!-- MAIN IMAGE -->
-								<img src="<?php echo $section_one_image_url; ?>" alt="" title="virtus" width="2880" height="1600"
+								<img src="<?php echo $section_one_image_; ?>" alt="" title="virtus" width="2880" height="1600"
 									data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off"
 									class="rev-slidebg" data-no-retina>
 								<!-- LAYERS -->
