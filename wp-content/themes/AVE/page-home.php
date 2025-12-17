@@ -2,7 +2,11 @@
 /*
 	Template Name: Home
 */
-get_header(); ?>
+get_header(); 
+
+$first_section_banner_title_one = get_field('first_section_banner_title_one');
+
+?>
 
 
     <main id="content" class="content">
@@ -36,19 +40,7 @@ get_header(); ?>
 									data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
 									data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
 									style="z-index: 5; white-space: nowrap; font-size: 100px; line-height: 100px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family:Poppins;">
-									HIGH TECH </h2>
-
-								<!-- LAYER NR. 2 -->
-								<h2 class="tp-caption   tp-resizeme" id="slide-1-layer-2" data-x="['center','center','center','center']"
-									data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-									data-voffset="['-95','-95','-105','-116']" data-fontsize="['100','100','100','72']"
-									data-lineheight="['100','100','100','65']" data-width="none" data-height="none" data-whitespace="nowrap"
-									data-type="text" data-responsive_offset="on"
-									data-frames='[{"delay":1150,"speed":800,"frame":"0","from":"y:[100%];sX:1.15;sY:1.15;opacity:0;","to":"o:1;","ease":"Quint.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-									data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
-									data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-									style="z-index: 6; white-space: nowrap; font-size: 100px; line-height: 100px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family:Poppins;">
-									SOLUTIONS. </h2>
+									<?php echo $first_section_banner_title_one; ?> </h2>								
 
 								<!-- LAYER NR. 3 -->
 								<p class="tp-caption   tp-resizeme" id="slide-1-layer-3" data-x="['center','center','center','center']"
