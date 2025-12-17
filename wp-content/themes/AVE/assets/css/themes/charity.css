@@ -1,0 +1,222 @@
+                @font-face {
+                    font-family: 'gotham pro bold';
+                    src: local("gotham pro bold"), local("gotham pro-bold"), local("gotham-pro-bold"), local("gothamprobold"), url(../../fonts/GothaProBol.woff);
+                    font-display: swap;
+                }
+                
+                @font-face {
+                    font-family: 'gotham pro medium';
+                    src: local("gotham pro medium"), local("gotham pro-medium"), local("gotham-pro-medium"), local("gothampromedium"), url(../../fonts/GothaProMed.woff);
+                    font-display: swap;
+                }
+                
+                @font-face {
+                    font-family: 'gotham pro regular';
+                    src: local("gotham pro regular"), local("gotham pro-regular"), local("gotham-pro-regular"), local("gothamproregular"), url(../../fonts/GothaProReg.woff);
+                    font-display: swap;
+                }
+                
+                 :root {
+                    --color-primary: #143331;
+                    --color-gradient-start: #143331;
+                    --color-gradient-stop: #143331;
+                }
+                
+                body {
+                    font-family: 'gotham pro regular', sans-serif;
+                    font-size: 14px;
+                    line-height: 1.7em;
+                    color: #666;
+                }
+                
+                .h1,
+                h1,
+                .h2,
+                h2,
+                .h3,
+                h3,
+                .h4,
+                h4,
+                .h5,
+                h5,
+                .h6,
+                h6 {
+                    font-family: 'gotham pro regular', sans-serif;
+                    line-height: 1.2em;
+                }
+                
+                .h1,
+                h1,
+                .h2,
+                h2 {
+                    color: #24140d;
+                }
+                
+                .h3,
+                h3,
+                .h4,
+                h4,
+                .h5,
+                h5 {
+                    letter-spacing: -1px;
+                    color: #181b31;
+                }
+                
+                .h1,
+                h1 {
+                    font-size: 45px;
+                    font-weight: 700;
+                    line-height: 1.25em;
+                }
+                
+                .h2,
+                h2 {
+                    line-height: 1.25em;
+                    font-size: 40px;
+                    font-weight: 600;
+                    color: #004641;
+                }
+                
+                .h3,
+                h3 {
+                    font-size: 29px;
+                }
+                
+                .h4,
+                h4 {
+                    line-height: 1.25em;
+                    font-size: 40px;
+                }
+                
+                .h5,
+                h5 {
+                    line-height: 1.25em;
+                    font-weight: 700;
+                    font-size: 21px;
+                }
+                
+                .h6,
+                h6 {
+                    font-size: 16px;
+                    color: #ff9900;
+                }
+                
+                .mainbar-wrap {
+                    padding-left: 35px;
+                    padding-right: 35px;
+                }
+                
+                .main-nav>li>a {
+                    font-size: 15px;
+                    line-height: 1.5em;
+                    font-weight: 700;
+                    color: #fff;
+                }
+                
+                .main-nav>li.is-active>a,
+                .main-nav>li.current-menu-item>a,
+                .main-nav>li:hover>a,
+                .main-nav>li>a:hover {
+                    color: #fff;
+                }
+                
+                .header-module .btn {
+                    color: #fff;
+                    border-color: #fff;
+                }
+                
+                .header-module .btn:hover {
+                    background-color: #fff;
+                    color: #000;
+                }
+                
+                .btn-solid {
+                    background-color: #143331;
+                    border-color: #143331;
+                    color: #ffffff;
+                }
+                
+                .btn-solid:hover {
+                    background-color: #fff;
+                    color: #ff9900;
+                }
+                
+                .countdown .countdown-period {
+                    font-size: 14px;
+                }
+                
+                .main-footer {
+                    padding-top: 140px;
+                    color: #a1a3ab;
+                }
+                
+                .main-footer a:not(.btn) {
+                    color: rgba(240, 240, 240, 0.7);
+                }
+                
+                .main-footer a:not(.btn):hover {
+                    color: #fff;
+                }
+                
+                .main-footer .social-icon a {
+                    color: #fff;
+                }
+                
+                .main-footer .widget-title {
+                    color: #ffe8bf;
+                }
+                
+                @media (min-width: 992px) {
+                    .main-footer section {
+                        padding-left: 7%;
+                        padding-right: 7%;
+                    }
+                }
+                
+                @media (min-width: 767px) {
+                    .lqd-sticky-footer-wrap section {
+                        background-position: center !important;
+                    }
+                }
+                
+                @media (max-width: 1199px) {
+                    .margin-home {
+                        margin-top: -52px;
+                    }
+                }
+                
+                @media (max-width: 1199px) {
+                    .margin-about {
+                        margin-top: -52px;
+                    }
+                }
+                
+                @media (max-width: 1199px) {
+                    .margin-team {
+                        margin-top: -52px;
+                    }
+                }
+                
+                @media (max-width: 1199px) {
+                    .margin-publication {
+                        margin-top: -52px;
+                    }
+                }
+                
+                @media (max-width: 1199px) {
+                    .margin-highlights {
+                        margin-top: -52px;
+                    }
+                }
+                
+                @media (max-width: 1199px) {
+                    .margin-blog {
+                        margin-top: -52px;
+                    }
+                }
+                
+                @media (max-width: 1199px) {
+                    .margin-contact {
+                        margin-top: -52px;
+                    }
+                }
