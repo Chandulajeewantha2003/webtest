@@ -66,7 +66,7 @@
 							
 							<div class="col">
 								
-								<div class="collapse navbar-collapse" id="main-header-collapse">
+								<div class="collapse navbar-collapse text-white" id="main-header-collapse">
 									
 									<ul id="primary-nav" class="main-nav nav align-items-lg-stretch justify-content-lg-center" data-submenu-options='{ "toggleType":"fade", "handler":"mouse-in-out" }' data-localscroll="true">
 										
