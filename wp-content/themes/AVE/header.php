@@ -7,10 +7,10 @@
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
 	
-	<meta charset="utf-8">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="theme-color" content="#3ed2a7">
@@ -18,23 +18,22 @@
 	<link rel="shortcut icon" href="./favicon.png" />
 	
 	<title>Ave HTML Template</title>
-	
+	<title><?php wp_title('|', true, 'right'); ?></title>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600,700" rel="stylesheet">
 	
-	<link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
-	<link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
-	<link rel="stylesheet" href="assets/css/theme.min.css" />
-	<link rel="stylesheet" href="assets/css/themes/virtus-1.css" />
-
-	<link rel="stylesheet" type="text/css" href="./assets/vendors/revolution/css/settings.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/vendors/liquid-icon/liquid-icon.min.css" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/vendors/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/theme-vendors.min.css" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/theme.min.css" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/themes/virtus-1.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/vendors/revolution/css/settings.css">
 	
 	<!-- Head Libs -->
-	<script async src="assets/vendors/modernizr.min.js"></script>
-	
+	<script async src="<?php echo get_template_directory_uri(); ?>/assets/vendors/modernizr.min.js"></script>
+	<?php wp_head(); ?>
 </head>
-<body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="classic" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
-	
+<body <?php body_class(); ?> data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="classic" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
+	<?php wp_body_open(); ?>
 	<div id="wrap">
 		
 		<header class="main-header main-header-overlay bb-fade-white-015" data-sticky-header="true" data-sticky-options='{ "stickyTrigger": "first-section" }'>
@@ -47,11 +46,11 @@
 							
 							<div class="col pr-5">
 								<div class="navbar-header">
-									<a class="navbar-brand pt-20 pb-20" href="index-virtus-1.html" rel="home">
+									<a class="navbar-brand pt-20 pb-20" href=""<?php bloginfo('url'); ?>/" rel="home">
 										<span class="navbar-brand-inner">
-											<img class="logo-sticky" src="./assets/img/logo/opus-dark.svg" alt="Ave WordPress Theme">
-											<img class="mobile-logo-default" src="./assets/img/logo/opus-dark.svg" alt="Ave HTML Template">
-											<img class="logo-default" src="./assets/img/logo/opus-blue.svg" alt="Ave HTML Template">
+											<img class="logo-sticky" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/opus-dark.svg" alt="Ave WordPress Theme">
+											<img class="mobile-logo-default" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/opus-dark.svg" alt="Ave HTML Template">
+											<img class="logo-default" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/opus-blue.svg" alt="Ave HTML Template">
 										</span>
 									</a>
 									<button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>

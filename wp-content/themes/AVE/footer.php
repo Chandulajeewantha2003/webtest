@@ -16,7 +16,7 @@
 						<div class="lqd-column col-md-3 col-sm-6">
 	
 							<figure class="mb-30">
-								<img src="./assets/img/logo/opus-blue.svg" alt="Virtus">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/opus-blue.svg" alt="Virtus">
 							</figure>
 							<p>We help our clients succeed by creating brand identities, digital experiences, and print materials.</p>
 
@@ -70,7 +70,7 @@
 								<div class="lqd-column col-md-4 col-sm-6 masonry-item px-1">
 									<div class="ld-media-item mb-2">
 										<figure data-responsive-bg="true">
-											<img class="invisible" src="./assets/demo/portfolio/pf-1.jpg" alt="Media Gallery">
+											<img class="invisible" src="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-1.jpg" alt="Media Gallery">
 										</figure>
 										<div class="ld-media-item-overlay d-flex flex-column align-items-center text-center justify-content-center">
 											<div class="ld-media-bg"></div>
@@ -82,14 +82,14 @@
 												</span>
 											</div><!-- /.ld-media-content -->
 										</div><!-- /.ld-media-item-overlay -->
-										<a href="./assets/demo/portfolio/pf-1.jpg" class="liquid-overlay-link fresco" data-fresco-group="media-group-1"></a>
+										<a href="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-1.jpg" class="liquid-overlay-link fresco" data-fresco-group="media-group-1"></a>
 									</div><!-- /.ld-media-item -->
 								</div><!-- /.col-md-3 -->
 								
 								<div class="lqd-column col-md-4 col-sm-6 masonry-item px-1">
 									<div class="ld-media-item mb-2">
 										<figure data-responsive-bg="true">
-											<img class="invisible" src="./assets/demo/portfolio/pf-2.jpg" alt="Media Gallery">
+											<img class="invisible" src="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-2.jpg" alt="Media Gallery">
 										</figure>
 										<div class="ld-media-item-overlay d-flex flex-column align-items-center text-center justify-content-center">
 											<div class="ld-media-bg"></div>
@@ -101,14 +101,14 @@
 												</span>
 											</div><!-- /.ld-media-content -->
 										</div><!-- /.ld-media-item-overlay -->
-										<a href="./assets/demo/portfolio/pf-2.jpg" class="liquid-overlay-link fresco" data-fresco-group="media-group-1"></a>
+										<a href="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-2.jpg" class="liquid-overlay-link fresco" data-fresco-group="media-group-1"></a>
 									</div><!-- /.ld-media-item -->
 								</div><!-- /.col-md-3 -->
 								
 								<div class="lqd-column col-md-4 col-sm-6 masonry-item px-1">
 									<div class="ld-media-item mb-2">
 										<figure data-responsive-bg="true">
-											<img class="invisible" src="./assets/demo/portfolio/pf-3.jpg" alt="Media Gallery">
+											<img class="invisible" src="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-3.jpg" alt="Media Gallery">
 										</figure>
 										<div class="ld-media-item-overlay d-flex flex-column align-items-center text-center justify-content-center">
 											<div class="ld-media-bg"></div>
@@ -120,14 +120,14 @@
 												</span>
 											</div><!-- /.ld-media-content -->
 										</div><!-- /.ld-media-item-overlay -->
-										<a href="./assets/demo/portfolio/pf-3.jpg" class="liquid-overlay-link fresco" data-fresco-group="media-group-1"></a>
+										<a href="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-3.jpg" class="liquid-overlay-link fresco" data-fresco-group="media-group-1"></a>
 									</div><!-- /.ld-media-item -->
 								</div><!-- /.col-md-3 -->
 								
 								<div class="lqd-column col-md-4 col-sm-6 masonry-item px-1">
 									<div class="ld-media-item mb-2">
 										<figure data-responsive-bg="true">
-											<img class="invisible" src="./assets/demo/portfolio/pf-4.jpg" alt="Media Gallery">
+											<img class="invisible" src="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-4.jpg" alt="Media Gallery">
 										</figure>
 										<div class="ld-media-item-overlay d-flex flex-column align-items-center text-center justify-content-center">
 											<div class="ld-media-bg"></div>
@@ -139,14 +139,14 @@
 												</span>
 											</div><!-- /.ld-media-content -->
 										</div><!-- /.ld-media-item-overlay -->
-										<a href="./assets/demo/portfolio/pf-4.jpg" class="liquid-overlay-link fresco" data-fresco-group="media-group-1"></a>
+										<a href="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-4.jpg" class="liquid-overlay-link fresco" data-fresco-group="media-group-1"></a>
 									</div><!-- /.ld-media-item -->
 								</div><!-- /.col-md-3 -->
 								
 								<div class="lqd-column col-md-4 col-sm-6 masonry-item px-1">
 									<div class="ld-media-item mb-2">
 										<figure data-responsive-bg="true">
-											<img class="invisible" src="./assets/demo/portfolio/pf-5.jpg" alt="Media Gallery">
+											<img class="invisible" src="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-5.jpg" alt="Media Gallery">
 										</figure>
 										<div class="ld-media-item-overlay d-flex flex-column align-items-center text-center justify-content-center">
 											<div class="ld-media-bg"></div>
@@ -158,14 +158,14 @@
 												</span>
 											</div><!-- /.ld-media-content -->
 										</div><!-- /.ld-media-item-overlay -->
-										<a href="./assets/demo/portfolio/pf-5.jpg" class="liquid-overlay-link fresco" data-fresco-group="media-group-1"></a>
+										<a href="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-5.jpg" class="liquid-overlay-link fresco" data-fresco-group="media-group-1"></a>
 									</div><!-- /.ld-media-item -->
 								</div><!-- /.col-md-3 -->
 								
 								<div class="lqd-column col-md-4 col-sm-6 masonry-item px-1">
 									<div class="ld-media-item mb-2">
 										<figure data-responsive-bg="true">
-											<img class="invisible" src="./assets/demo/portfolio/pf-6.jpg" alt="Media Gallery">
+											<img class="invisible" src="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-6.jpg" alt="Media Gallery">
 										</figure>
 										<div class="ld-media-item-overlay d-flex flex-column align-items-center text-center justify-content-center">
 											<div class="ld-media-bg"></div>
@@ -177,7 +177,7 @@
 												</span>
 											</div><!-- /.ld-media-content -->
 										</div><!-- /.ld-media-item-overlay -->
-										<a href="./assets/demo/portfolio/pf-6.jpg" class="liquid-overlay-link fresco" data-fresco-group="media-group-1"></a>
+										<a href="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-6.jpg" class="liquid-overlay-link fresco" data-fresco-group="media-group-1"></a>
 									</div><!-- /.ld-media-item -->
 								</div><!-- /.col-md-3 -->
 
@@ -219,25 +219,24 @@
 
 	<script src="//maps.googleapis.com/maps/api/js?key={YOUR_API_KEY}"></script>
 
-	<script src="./assets/vendors/jquery.min.js"></script>
-	<script src="./assets/js/theme-vendors.js"></script>
-	<script src="./assets/js/theme.min.js"></script>
-	<script src="./assets/js/liquidAjaxContactForm.min.js"></script>
-	<script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
-
-	<script type="text/javascript" src="./assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-	<script type="text/javascript" src="./assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/vendors/jquery.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/theme-vendors.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/theme.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/liquidAjaxContactForm.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/liquidAjaxMailchimp.min.js"></script>	
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
 
 	<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
-	<script type="text/javascript" src="./assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-	<script type="text/javascript" src="./assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-	<script type="text/javascript" src="./assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-	<script type="text/javascript" src="./assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-	<script type="text/javascript" src="./assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-	<script type="text/javascript" src="./assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-	<script type="text/javascript" src="./assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-	<script type="text/javascript" src="./assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-	<script type="text/javascript" src="./assets/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/vendors/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
 
 	<style>
 		#rev_slider_1_1 .metis.tparrows {
@@ -356,6 +355,7 @@
 			}; /* END OF ON LOAD FUNCTION */
 		}()); /* END OF WRAPPING FUNCTION */
 	</script>
+	<?php wp_footer(); ?>
 
 </body>
 </html>
