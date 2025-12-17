@@ -5,6 +5,7 @@
 get_header(); 
 
 $first_section_banner_title_one = get_field('first_section_banner_title_one');
+$first_section_banner_description_one = get_field('first_section_banner_description_one');
 
 ?>
 
@@ -40,7 +41,7 @@ $first_section_banner_title_one = get_field('first_section_banner_title_one');
 									data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
 									data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
 									style="z-index: 5; white-space: nowrap; font-size: 100px; line-height: 100px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family:Poppins;">
-									<?php echo $first_section_banner_title_one; ?> </h2>								
+									<?php echo $first_section_banner_title_one;?> </h2>								
 
 								<!-- LAYER NR. 3 -->
 								<p class="tp-caption   tp-resizeme" id="slide-1-layer-3" data-x="['center','center','center','center']"
@@ -53,7 +54,7 @@ $first_section_banner_title_one = get_field('first_section_banner_title_one');
 									data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
 									data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
 									style="z-index: 7; min-width: 610px; max-width: 610px; white-space: normal; font-size: 21px; line-height: 30px; font-weight: 400; color: rgba(255,255,255,0.7); letter-spacing: 0.5px;">
-									A digital marketing company that can produce applications. </p>
+									<?php echo $first_section_banner_description_one;?></p>
 
 								<!-- LAYER NR. 4 -->
 								<div class="tp-caption rev-btn  tp-resizeme" id="slide-1-layer-4"
