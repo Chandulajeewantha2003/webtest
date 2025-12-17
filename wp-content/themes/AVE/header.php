@@ -75,7 +75,7 @@
 												<span class="link-icon"></span>
 												<span class="link-txt">
 													<span class="link-ext"></span>
-													<span class="txt text-white">Home</span>
+													<span class="txt">Home</span>
 												</span>
 											</a>
 										</li>
