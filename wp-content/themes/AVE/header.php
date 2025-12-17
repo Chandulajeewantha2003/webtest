@@ -66,77 +66,94 @@
 							
 							<div class="col">
 								
-								<div class="collapse navbar-collapse text-white" id="main-header-collapse">
-									
-									<ul id="primary-nav" class="main-nav nav align-items-lg-stretch justify-content-lg-center" data-submenu-options='{ "toggleType":"fade", "handler":"mouse-in-out" }' data-localscroll="true">
-										
+								<div
+									class="collapse navbar-collapse text-white
+											[&_a]:!text-white
+											[&_a:hover]:text-gray-300"
+									id="main-header-collapse"
+									>
+																		
+									<ul
+										id="primary-nav"
+										class="main-nav nav align-items-lg-stretch justify-content-lg-center"
+										data-submenu-options='{ "toggleType":"fade", "handler":"mouse-in-out" }'
+										data-localscroll="true"
+									>
+																			
 										<li class="active">
-											<a href="#content">
-												<span class="link-icon"></span>
-												<span class="link-txt">
-													<span class="link-ext"></span>
-													<span class="txt">Home</span>
-												</span>
-											</a>
+										<a href="#content">
+											<span class="link-icon"></span>
+											<span class="link-txt">
+											<span class="link-ext"></span>
+											<span class="txt">Home</span>
+											</span>
+										</a>
 										</li>
+
 										<li>
-											<a href="#features">
-												<span class="link-icon"></span>
-												<span class="link-txt">
-													<span class="link-ext"></span>
-													<span class="txt">Features</span>
-												</span>
-											</a>
+										<a href="#features">
+											<span class="link-icon"></span>
+											<span class="link-txt">
+											<span class="link-ext"></span>
+											<span class="txt">Features</span>
+											</span>
+										</a>
 										</li>
+
 										<li>
-											<a href="#case-studies">
-												<span class="link-icon"></span>
-												<span class="link-txt">
-													<span class="link-ext"></span>
-													<span class="txt">Case Studies</span>
-												</span>
-											</a>
+										<a href="#case-studies">
+											<span class="link-icon"></span>
+											<span class="link-txt">
+											<span class="link-ext"></span>
+											<span class="txt">Case Studies</span>
+											</span>
+										</a>
 										</li>
+
 										<li>
-											<a href="#services">
-												<span class="link-icon"></span>
-												<span class="link-txt">
-													<span class="link-ext"></span>
-													<span class="txt">Services</span>
-												</span>
-											</a>
+										<a href="#services">
+											<span class="link-icon"></span>
+											<span class="link-txt">
+											<span class="link-ext"></span>
+											<span class="txt">Services</span>
+											</span>
+										</a>
 										</li>
+
 										<li>
-											<a href="#team">
-												<span class="link-icon"></span>
-												<span class="link-txt">
-													<span class="link-ext"></span>
-													<span class="txt">Team</span>
-												</span>
-											</a>
+										<a href="#team">
+											<span class="link-icon"></span>
+											<span class="link-txt">
+											<span class="link-ext"></span>
+											<span class="txt">Team</span>
+											</span>
+										</a>
 										</li>
+
 										<li>
-											<a href="#blog">
-												<span class="link-icon"></span>
-												<span class="link-txt">
-													<span class="link-ext"></span>
-													<span class="txt">Blog</span>
-												</span>
-											</a>
+										<a href="#blog">
+											<span class="link-icon"></span>
+											<span class="link-txt">
+											<span class="link-ext"></span>
+											<span class="txt">Blog</span>
+											</span>
+										</a>
 										</li>
+
 										<li>
-											<a href="#contact">
-												<span class="link-icon"></span>
-												<span class="link-txt">
-													<span class="link-ext"></span>
-													<span class="txt">Contact</span>
-												</span>
-											</a>
+										<a href="#contact">
+											<span class="link-icon"></span>
+											<span class="link-txt">
+											<span class="link-ext"></span>
+											<span class="txt">Contact</span>
+											</span>
+										</a>
 										</li>
-									
+
 									</ul><!-- /#primary-nav  -->
-								
-								</div><!-- /#main-header-collapse -->
+																	
+									</div><!-- /#main-header-collapse -->
+
 								
 							</div><!-- /.col -->
 						
