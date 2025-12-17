@@ -4,10 +4,9 @@
 */
 get_header(); 
 
-$home_id = get_option('page_on_front');
+$first_section_banner_title_one = get_field('first_section_banner_title_one');
+$first_section_banner_description_one = get_field('first_section_banner_description_one');
 
-$first_section_banner_title_one = get_field('first_section_banner_title_one', $home_id);
-$first_section_banner_description_one = get_field('first_section_banner_description_one', $home_id);
 
 ?>
 
