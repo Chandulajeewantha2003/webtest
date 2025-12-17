@@ -6,6 +6,9 @@ get_header();
 
 $first_section_banner_title_one = get_field('first_section_banner_title_one');
 $first_section_banner_description_one = get_field('first_section_banner_description_one');
+$first_section_banner_title_two = get_field('first_section_banner_title_two');
+$first_section_banner_description_two = get_field('first_section_banner_description_two');
+
 
 
 ?>
@@ -111,10 +114,10 @@ $first_section_banner_description_one = get_field('first_section_banner_descript
 									data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
 									data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
 									style="z-index: 6; white-space: nowrap; font-size: 100px; line-height: 100px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family:Poppins;">
-									DIGITAL IDEAS </h2>
+									<?php echo $first_section_banner_title_two;?> </h2>
 
 								<!-- LAYER NR. 7 -->
-								<h2 class="tp-caption   tp-resizeme" id="slide-3-layer-2" data-x="['center','center','center','center']"
+								<!-- <h2 class="tp-caption   tp-resizeme" id="slide-3-layer-2" data-x="['center','center','center','center']"
 									data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
 									data-voffset="['-95','-95','-95','-126']" data-fontsize="['100','100','100','62']"
 									data-lineheight="['100','100','100','65']" data-width="none" data-height="none" data-whitespace="nowrap"
@@ -123,7 +126,7 @@ $first_section_banner_description_one = get_field('first_section_banner_descript
 									data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
 									data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
 									style="z-index: 7; white-space: nowrap; font-size: 100px; line-height: 100px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family:Poppins;">
-									FOR YOU. </h2>
+									FOR YOU. </h2> -->
 
 								<!-- LAYER NR. 8 -->
 								<p class="tp-caption   tp-resizeme" id="slide-3-layer-3" data-x="['center','center','center','center']"
@@ -136,7 +139,7 @@ $first_section_banner_description_one = get_field('first_section_banner_descript
 									data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
 									data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
 									style="z-index: 8; min-width: 572px; max-width: 572px; white-space: normal; font-size: 18px; line-height: 30px; font-weight: 400; color: rgba(255,255,255,0.7); letter-spacing: 0.5px;">
-									A digital marketing company that can produce applications. </p>
+									<?php echo $first_section_banner_description_two;?> </p>
 
 								<!-- LAYER NR. 9 -->
 								<div class="tp-caption rev-btn  tp-resizeme" id="slide-3-layer-4"
