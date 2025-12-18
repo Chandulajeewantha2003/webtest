@@ -11,6 +11,18 @@ $first_section_banner_description_two = get_field('first_section_banner_descript
 
 $section_one_image_ = get_field('section_one_image_');
 
+$second_section_title_one = get_field('second_section_title_one');
+$second_section_description_one = get_field('second_section_description_one');
+$second_section_title_two = get_field('second_section_title_two');
+$second_section_description_two = get_field('second_section_description_two');
+$second_section_title_three = get_field('second_section_title_three');
+$second_section_description_three = get_field('second_section_description_three');
+$second_section_title_four = get_field('second_section_title_four');
+$second_section_description_four = get_field('second_section_description_four');
+$second_section_title_five = get_field('second_section_title_five');
+$second_section_description_five = get_field('second_section_description_five');
+$second_section_title_six = get_field('second_section_title_six');
+$second_section_description_six = get_field('second_section_description_six');
 ?>
 
 
@@ -173,7 +185,7 @@ $section_one_image_ = get_field('section_one_image_');
 				</div><!-- END REVOLUTION SLIDER -->
 				
 			</section>
-
+			<!-- Section Two -->
 			<section id="features" class="vc_row pt-60 pb-30">
 				<div class="container">
 					<div class="row">
@@ -187,8 +199,8 @@ $section_one_image_ = get_field('section_one_image_');
 									</span>
 								</div><!-- /.iconbox-icon-wrap -->
 								<div class="contents">
-									<h3>Digital Solutions</h3>
-									<p class="font-size-14 lh-185">Huge collection of elements, rich customization options, flexible layouts, and instant results!</p>
+									<h3> <?php echo $second_section_title_one; ?></h3>
+									<p class="font-size-14 lh-185"><?php echo $second_section_description_one; ?></p>
 								</div><!-- /.contents -->
 							</div><!-- /.iconbox -->
 
@@ -203,8 +215,8 @@ $section_one_image_ = get_field('section_one_image_');
 									</span>
 								</div><!-- /.iconbox-icon-wrap -->
 								<div class="contents">
-									<h3>Branding Strategy</h3>
-									<p class="font-size-14 lh-185">Huge collection of elements, rich customization options, flexible layouts, and instant results!</p>
+									<h3><?php echo $second_section_title_two; ?></h3>
+									<p class="font-size-14 lh-185"><?php echo $second_section_description_two; ?></p>
 								</div><!-- /.contents -->
 							</div><!-- /.iconbox -->
 
@@ -219,8 +231,8 @@ $section_one_image_ = get_field('section_one_image_');
 									</span>
 								</div><!-- /.iconbox-icon-wrap -->
 								<div class="contents">
-									<h3>Logo & Identity</h3>
-									<p class="font-size-14 lh-185">Huge collection of elements, rich customization options, flexible layouts, and instant results!</p>
+									<h3><?php echo $second_section_title_three; ?></h3>
+									<p class="font-size-14 lh-185"><?php echo $second_section_description_three; ?></p>
 								</div><!-- /.contents -->
 							</div><!-- /.iconbox -->
 
@@ -235,8 +247,8 @@ $section_one_image_ = get_field('section_one_image_');
 									</span>
 								</div><!-- /.iconbox-icon-wrap -->
 								<div class="contents">
-									<h3>SEO & Analytics</h3>
-									<p class="font-size-14 lh-185">Huge collection of elements, rich customization options, flexible layouts, and instant results!</p>
+									<h3><?php echo $second_section_title_four; ?></h3>
+									<p class="font-size-14 lh-185"><?php echo $second_section_description_four; ?></p>
 								</div><!-- /.contents -->
 							</div><!-- /.iconbox -->
 
@@ -251,8 +263,8 @@ $section_one_image_ = get_field('section_one_image_');
 									</span>
 								</div><!-- /.iconbox-icon-wrap -->
 								<div class="contents">
-									<h3>Beautiful Presentation</h3>
-									<p class="font-size-14 lh-185">Huge collection of elements, rich customization options, flexible layouts, and instant results!</p>
+									<h3><?php echo $second_section_title_five; ?></h3>
+									<p class="font-size-14 lh-185"><?php echo $second_section_description_five; ?></p>
 								</div><!-- /.contents -->
 							</div><!-- /.iconbox -->
 
@@ -267,8 +279,8 @@ $section_one_image_ = get_field('section_one_image_');
 									</span>
 								</div><!-- /.iconbox-icon-wrap -->
 								<div class="contents">
-									<h3>UX Design</h3>
-									<p class="font-size-14 lh-185">Huge collection of elements, rich customization options, flexible layouts, and instant results!</p>
+									<h3><?php echo $second_section_title_six; ?></h3>
+									<p class="font-size-14 lh-185"><?php echo $second_section_description_six; ?></p>
 								</div><!-- /.contents -->
 							</div><!-- /.iconbox -->
 
@@ -278,6 +290,7 @@ $section_one_image_ = get_field('section_one_image_');
 				</div><!-- /.container -->
 			</section>
 
+			<!-- Section Three -->
 			<section id="case-studies" class="vc_row pt-50 pb-80">
 
 				<div class="container">
