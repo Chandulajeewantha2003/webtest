@@ -334,10 +334,10 @@ $section_three_description = get_field('section_three_description');
 											<div class="ld-pf-inner">
 												<div class="ld-pf-image">
 													<figure data-responsive-bg="true">
-														<img src="<?php echo $section_three_client_image; ?>">
+														<img  src="<?php echo $section_three_client_image; ?>"/>
 													</figure>
 												</div><!-- .ld-pf-image -->
-												
+												<div class="ld-pf-bg bg-primary opacity-08"></div>
 												<div
 													class="ld-pf-details"
 													data-custom-animations="true"
