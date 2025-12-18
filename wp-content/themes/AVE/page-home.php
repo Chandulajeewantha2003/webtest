@@ -427,7 +427,13 @@ $section_three_description = get_field('section_three_description');
 						<div class="lqd-column col-md-12 px-0">
 
 							<div class="carousel-container carousel-nav-floated carousel-nav-center carousel-nav-middle carousel-nav-xl carousel-nav-solid carousel-nav-square carousel-dots-style1">
-
+									<?php if( have_rows('section_three_client_figure') ): $i = 0; ?>
+										<?php while( have_rows('section_three_client_figure') ): the_row(); 
+											$i++;
+											$section_three_client_image = get_sub_field('section_three_client_image');
+											$section_three_client_title_ = get_sub_field('section_three_client_title_');
+											$section_three_client_description = get_sub_field('section_three_client_description');
+										?>
 								<div class="carousel-items row mx-0" data-lqd-flickity='{"cellAlign":"center","prevNextButtons":true,"buttonsAppendTo":"self","pageDots":false,"groupCells":true,"wrapAround":true,"pauseAutoPlayOnHover":false,"navArrow":{"prev":"<i class=\"fa fa-angle-left\"></i>","next":"<i class=\"fa fa-angle-right\"></i>"}}'>
 
 									<div class="carousel-item lqd-column col-md-3 col-sm-6 col-xs-12 px-0">
@@ -435,100 +441,12 @@ $section_three_description = get_field('section_three_description');
 										<div class="ld-tm pos-rel text-light mb-0">
 											<div class="ld-tm-img">
 												<figure>
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/demo/team/team-30.jpg" alt="Judy Abott">
+													<img src="<?php echo $section_three_client_image; ?>">
 												</figure>
 											</div>
 											<div class="ld-tm-info ld-overlay d-flex flex-column align-items-center justify-content-center bg-gradient-black-transparent-bt">
-												<h3 class="ld-tm-name">Judy Abbott</h3>
-												<h6 class="ld-tm-pos text-uppercase">CEO</h6>
-												<ul class="ld-tm-social social-icon mt-5">
-													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-													<li><a href="#"><i class="fa fa-github"></i></a></li>
-												</ul>
-											</div><!-- /.ld-tm-info -->
-										</div><!-- /.ld-tm -->
-
-									</div><!-- /.lqd-column col-md-3 col-sm-6 col-xs-12 -->
-
-									<div class="carousel-item lqd-column col-md-3 col-sm-6 col-xs-12 px-0">
-
-										<div class="ld-tm pos-rel text-light mb-0">
-											<div class="ld-tm-img">
-												<figure>
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/demo/team/team-31.jpg" alt="Judy Abott">
-												</figure>
-											</div>
-											<div class="ld-tm-info ld-overlay d-flex flex-column align-items-center justify-content-center bg-gradient-black-transparent-bt">
-												<h3 class="ld-tm-name">Judy Abbott</h3>
-												<h6 class="ld-tm-pos text-uppercase">CEO</h6>
-												<ul class="ld-tm-social social-icon mt-5">
-													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-													<li><a href="#"><i class="fa fa-github"></i></a></li>
-												</ul>
-											</div><!-- /.ld-tm-info -->
-										</div><!-- /.ld-tm -->
-
-									</div><!-- /.lqd-column col-md-3 col-sm-6 col-xs-12 -->
-
-									<div class="carousel-item lqd-column col-md-3 col-sm-6 col-xs-12 px-0">
-
-										<div class="ld-tm pos-rel text-light mb-0">
-											<div class="ld-tm-img">
-												<figure>
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/demo/team/team-32.jpg" alt="Judy Abott">
-												</figure>
-											</div>
-											<div class="ld-tm-info ld-overlay d-flex flex-column align-items-center justify-content-center bg-gradient-black-transparent-bt">
-												<h3 class="ld-tm-name">Judy Abbott</h3>
-												<h6 class="ld-tm-pos text-uppercase">CEO</h6>
-												<ul class="ld-tm-social social-icon mt-5">
-													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-													<li><a href="#"><i class="fa fa-github"></i></a></li>
-												</ul>
-											</div><!-- /.ld-tm-info -->
-										</div><!-- /.ld-tm -->
-
-									</div><!-- /.lqd-column col-md-3 col-sm-6 col-xs-12 -->
-
-									<div class="carousel-item lqd-column col-md-3 col-sm-6 col-xs-12 px-0">
-
-										<div class="ld-tm pos-rel text-light mb-0">
-											<div class="ld-tm-img">
-												<figure>
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/demo/team/team-33.jpg" alt="Judy Abott">
-												</figure>
-											</div>
-											<div class="ld-tm-info ld-overlay d-flex flex-column align-items-center justify-content-center bg-gradient-black-transparent-bt">
-												<h3 class="ld-tm-name">Judy Abbott</h3>
-												<h6 class="ld-tm-pos text-uppercase">CEO</h6>
-												<ul class="ld-tm-social social-icon mt-5">
-													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-													<li><a href="#"><i class="fa fa-github"></i></a></li>
-												</ul>
-											</div><!-- /.ld-tm-info -->
-										</div><!-- /.ld-tm -->
-
-									</div><!-- /.lqd-column col-md-3 col-sm-6 col-xs-12 -->
-
-									<div class="carousel-item lqd-column col-md-3 col-sm-6 col-xs-12 px-0">
-
-										<div class="ld-tm pos-rel text-light mb-0">
-											<div class="ld-tm-img">
-												<figure>
-													<img src="<?php echo get_template_directory_uri(); ?>/assets/demo/team/team-31.jpg" alt="Judy Abott">
-												</figure>
-											</div>
-											<div class="ld-tm-info ld-overlay d-flex flex-column align-items-center justify-content-center bg-gradient-black-transparent-bt">
-												<h3 class="ld-tm-name">Judy Abbott</h3>
-												<h6 class="ld-tm-pos text-uppercase">CEO</h6>
+												<h3 class="ld-tm-name"><?php echo $section_three_client_title_; ?></h3>
+												<h6 class="ld-tm-pos text-uppercase"><?php echo $section_three_client_description; ?></h6>
 												<ul class="ld-tm-social social-icon mt-5">
 													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -541,7 +459,8 @@ $section_three_description = get_field('section_three_description');
 									</div><!-- /.lqd-column col-md-3 col-sm-6 col-xs-12 -->
 
 								</div><!-- /.carousel-items row -->
-
+											<?php endwhile; ?>
+          									<?php endif; ?>
 							</div><!-- /.carousel-container -->
 
 						</div><!-- /.lqd-column col-md-12 -->
