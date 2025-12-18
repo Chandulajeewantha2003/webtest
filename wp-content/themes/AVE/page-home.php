@@ -364,7 +364,7 @@ $section_three_description = get_field('section_three_description');
 					</div><!-- /.row -->
 				</div><!-- /.container-fluid -->
 
-			</section> -->
+			</section> 
 
 			<section id="services" class="vc_row pt-80 pb-80">
 				<div class="container">
