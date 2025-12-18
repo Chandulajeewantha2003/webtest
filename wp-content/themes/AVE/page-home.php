@@ -425,15 +425,15 @@ $section_three_description = get_field('section_three_description');
 					<div class="row mx-0">
 
 						<div class="lqd-column col-md-12 px-0">
-
-							<div class="carousel-container carousel-nav-floated carousel-nav-center carousel-nav-middle carousel-nav-xl carousel-nav-solid carousel-nav-square carousel-dots-style1">
-									<?php if( have_rows('section_three_client_figure') ): $i = 0; ?>
+							<?php if( have_rows('section_three_client_figure') ): $i = 0; ?>
 										<?php while( have_rows('section_three_client_figure') ): the_row(); 
 											$i++;
 											$section_three_client_image = get_sub_field('section_three_client_image');
 											$section_three_client_title_ = get_sub_field('section_three_client_title_');
 											$section_three_client_description = get_sub_field('section_three_client_description');
 										?>
+							<div class="carousel-container carousel-nav-floated carousel-nav-center carousel-nav-middle carousel-nav-xl carousel-nav-solid carousel-nav-square carousel-dots-style1">
+									
 								<div class="carousel-items row mx-0" data-lqd-flickity='{"cellAlign":"center","prevNextButtons":true,"buttonsAppendTo":"self","pageDots":false,"groupCells":true,"wrapAround":true,"pauseAutoPlayOnHover":false,"navArrow":{"prev":"<i class=\"fa fa-angle-left\"></i>","next":"<i class=\"fa fa-angle-right\"></i>"}}'>
 
 									<div class="carousel-item lqd-column col-md-3 col-sm-6 col-xs-12 px-0">
@@ -459,10 +459,10 @@ $section_three_description = get_field('section_three_description');
 									</div><!-- /.lqd-column col-md-3 col-sm-6 col-xs-12 -->
 
 								</div><!-- /.carousel-items row -->
-											<?php endwhile; ?>
-          									<?php endif; ?>
+											
 							</div><!-- /.carousel-container -->
-
+								<?php endwhile; ?>
+          									<?php endif; ?>
 						</div><!-- /.lqd-column col-md-12 -->
 
 					</div><!-- /.row -->
