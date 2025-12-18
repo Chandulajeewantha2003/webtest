@@ -333,7 +333,10 @@ $section_three_description = get_field('section_three_description');
 											<div class="ld-pf-inner">
 												<div class="ld-pf-image">
 													<figure data-responsive-bg="true">
-														<img src="<?php echo $section_three_client_image; ?>">
+														<?php if ( $section_three_client_image ) : ?>
+															<img src="<?php echo esc_url($section_three_client_image['url']); ?>"
+																alt="<?php echo esc_attr($section_three_client_image['alt']); ?>">
+														<?php endif; ?>
 													</figure>
 												</div><!-- .ld-pf-image -->
 												<div class="ld-pf-bg bg-primary opacity-08"></div>
