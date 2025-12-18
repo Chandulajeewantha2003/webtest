@@ -278,7 +278,7 @@ $section_one_image_ = get_field('section_one_image_');
 				</div><!-- /.container -->
 			</section>
 
-			<section id="case-studies" class="vc_row pt-50 pb-80">
+			<!-- <section id="case-studies" class="vc_row pt-50 pb-80">
 
 				<div class="container">
 					<div class="row">
@@ -309,7 +309,7 @@ $section_one_image_ = get_field('section_one_image_');
 											<div class="ld-pf-inner">
 												<div class="ld-pf-image">
 													<figure data-responsive-bg="true">
-														<img src="<?php echo get_template_directory_uri(); ?>/assets/demo/misc/macbook.jpg" alt="Minnimalism">
+														<img src="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-50.jpg" alt="Minnimalism">
 													</figure>
 												</div><!-- .ld-pf-image -->
 												<div class="ld-pf-bg bg-primary opacity-08"></div>
@@ -473,7 +473,7 @@ $section_one_image_ = get_field('section_one_image_');
 					</div><!-- /.row -->
 				</div><!-- /.container-fluid -->
 
-			</section>
+			</section> -->
 
 			<section id="services" class="vc_row pt-80 pb-80">
 				<div class="container">
