@@ -325,7 +325,7 @@ $section_three_description = get_field('section_three_description');
 										<?php while( have_rows('section_three_client_figure') ): the_row(); 
 											$i++;
 											$section_three_client_image = get_sub_field('section_three_client_image');
-											$section_three_client_title = get_sub_field('section_three_client_title');
+											$section_three_client_title_ = get_sub_field('section_three_client_title_');
 											$section_three_client_description = get_sub_field('section_three_client_description');
 										?>
 									<div class="lqd-column col-md-4 col-sm-6 col-xs-12 px-0">
@@ -343,7 +343,7 @@ $section_three_description = get_field('section_three_description');
 													data-custom-animations="true"
 													data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "startDelay": 0, "duration": 650, "delay": 100, "initValues": { "translateY": "150%" }, "animations": { "translateY": "0", "rotateX": 0 } }'>
 													<div class="ld-pf-details-inner">
-														<h3 class="ld-pf-title h4 font-weight-bold" data-split-text="true" data-split-options='{ "type": "words" }'><?php echo $section_three_client_title; ?></h3>
+														<h3 class="ld-pf-title h4 font-weight-bold" data-split-text="true" data-split-options='{ "type": "words" }'><?php echo $section_three_client_title_; ?></h3>
 														<div class="ld-pf-category size-lg">
 															<p data-split-text="true" data-split-options='{ "type": "words" }'><?php echo $section_three_client_description; ?></p>
 														</div><!-- /.ld-pf-category -->
