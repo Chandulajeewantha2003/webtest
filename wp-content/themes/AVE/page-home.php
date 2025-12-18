@@ -297,116 +297,73 @@ $section_three_description = get_field('section_three_description');
 			</section>
 
 			<!-- Section Three -->
-<section id="case-studies" class="vc_row pt-50 pb-80">
+			<section id="case-studies" class="vc_row pt-50 pb-80">
 
-    <div class="container">
-        <div class="row">
-            <div class="lqd-column col-md-6 col-md-offset-3">
-                <header class="fancy-title text-center">
-                    <h2 class="h3 mb-4">
-                        <?php echo esc_html($section_three_title); ?>
-                    </h2>
-                    <p class="font-size-17 lh-185">
-                        <?php echo esc_html($section_three_description); ?>
-                    </p>
-                </header>
-            </div>
-        </div>
-    </div>
+				<div class="container">
+					<div class="row">
 
-    <div class="container-fluid px-0">
-        <div class="row mx-0">
-            <div class="lqd-column col-md-12 px-0">
+						<div class="lqd-column col-md-6 col-md-offset-3">
 
-                <div class="liquid-portfolio-list">
-                    <div id="virtus-pf-grid-1" class="row liquid-portfolio-list-row">
+							<header class="fancy-title text-center">
+								<h2 class="h3 mb-4"><?php echo $section_three_title; ?></h2>
+								<p class="font-size-17 lh-185"><?php echo $section_three_description; ?></p>
+							</header>
 
-                        <?php if ( have_rows('section_three_client_figure') ) : ?>
-                            <?php while ( have_rows('section_three_client_figure') ) : the_row();
+						</div><!-- /.lqd-column col-md-6 col-md-offset-3 -->
 
-                                $image       = get_sub_field('section_three_client_image');
-                                $title       = get_sub_field('section_three_client_title');
-                                $description = get_sub_field('section_three_client_description');
-                            ?>
+					</div><!-- /.row -->
+				</div><!-- /.container -->
 
-                            <!-- SINGLE ITEM -->
-                            <div class="lqd-column col-md-4 col-sm-6 col-xs-12 px-0">
+				<div class="container-fluid px-0">
+					<div class="row mx-0">
 
-                                <div class="ld-pf-item ld-pf-light title-size-30 pf-details-inside pf-details-full pf-details-h-mid pf-details-v-mid pf-hover-masktext mb-0">
-                                    <div class="ld-pf-inner">
+						<div class="lqd-column col-md-12 px-0">
 
-                                        <!-- Image -->
-                                        <div class="ld-pf-image">
-                                            <figure data-responsive-bg="true">
-                                                <?php if ( $image ) : ?>
-                                                    <img src="<?php echo esc_url($image['url']); ?>"
-                                                         alt="<?php echo esc_attr($image['alt']); ?>">
-                                                <?php endif; ?>
-                                            </figure>
-                                        </div>
+							<div class="liquid-portfolio-list">
+								<div id="virtus-pf-grid-1" class="row liquid-portfolio-list-row">
+									<div class="lqd-column col-md-4 col-sm-6 col-xs-12 px-0">
+										<?php if( have_rows('section_three_client_figure') ): $i = 0; ?>
+										<?php while( have_rows('section_three_client_figure') ): the_row(); 
+											$i++;
+											$section_three_client_image = get_sub_field('section_three_client_image');
+											$section_three_client_title = get_sub_field('section_three_client_title');
+											$section_three_client_description = get_sub_field('section_three_client_description');
+										?>
+										<div class="ld-pf-item ld-pf-light title-size-30 pf-details-inside pf-details-full pf-details-h-mid pf-details-v-mid pf-hover-masktext mb-0">
+											<div class="ld-pf-inner">
+												<div class="ld-pf-image">
+													<figure data-responsive-bg="true">
+														<img src="<?php echo $section_three_client_image; ?>">
+													</figure>
+												</div><!-- .ld-pf-image -->
+												<div class="ld-pf-bg bg-primary opacity-08"></div>
+												<div
+													class="ld-pf-details"
+													data-custom-animations="true"
+													data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "startDelay": 0, "duration": 650, "delay": 100, "initValues": { "translateY": "150%" }, "animations": { "translateY": "0", "rotateX": 0 } }'>
+													<div class="ld-pf-details-inner">
+														<h3 class="ld-pf-title h4 font-weight-bold" data-split-text="true" data-split-options='{ "type": "words" }'><?php echo $section_three_client_title; ?></h3>
+														<div class="ld-pf-category size-lg">
+															<p data-split-text="true" data-split-options='{ "type": "words" }'><?php echo $section_three_client_description; ?></p>
+														</div><!-- /.ld-pf-category -->
+													</div><!-- /.ld-pf-details-inner -->
+												</div><!-- /.ld-pf-details -->
+												<a href="#" class="liquid-overlay-link"></a>
+											</div><!-- /.ld-pf-inner -->
+										</div><!-- /.ld-pf-item -->
+											<?php endwhile; ?>
+          									<?php endif; ?>
+									</div><!-- /.lqd-column col-md-4 col-sm-6 col-xs-12 -->
 
-                                        <!-- ❌ Removed green overlay -->
-                                        <!-- <div class="ld-pf-bg bg-primary opacity-08"></div> -->
+								</div><!-- /#virtus-pf-grid-1.row liquid-portfolio-list-row -->
+							</div><!-- /.liquid-portfolio-list -->
 
-                                        <!-- Content -->
-                                        <div
-                                            class="ld-pf-details"
-                                            data-custom-animations="true"
-                                            data-ca-options='{
-                                                "triggerHandler": "mouseenter",
-                                                "triggerTarget": ".ld-pf-item",
-                                                "triggerRelation": "closest",
-                                                "offTriggerHandler": "mouseleave",
-                                                "animationTarget": ".split-inner",
-                                                "startDelay": 0,
-                                                "duration": 650,
-                                                "delay": 100,
-                                                "initValues": { "translateY": "150%" },
-                                                "animations": { "translateY": "0", "rotateX": 0 }
-                                            }'>
+						</div><!-- /.lqd-column col-md-12 -->
 
-                                            <div class="ld-pf-details-inner">
+					</div><!-- /.row -->
+				</div><!-- /.container-fluid -->
 
-                                                <?php if ( $title ) : ?>
-                                                    <h3 class="ld-pf-title h4 font-weight-bold"
-                                                        data-split-text="true"
-                                                        data-split-options='{ "type": "words" }'>
-                                                        <?php echo esc_html($title); ?>
-                                                    </h3>
-                                                <?php endif; ?>
-
-                                                <?php if ( $description ) : ?>
-                                                    <div class="ld-pf-category size-lg">
-                                                        <p data-split-text="true"
-                                                           data-split-options='{ "type": "words" }'>
-                                                            <?php echo esc_html($description); ?>
-                                                        </p>
-                                                    </div>
-                                                <?php endif; ?>
-
-                                            </div>
-                                        </div>
-
-                                        <a href="#" class="liquid-overlay-link"></a>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- /SINGLE ITEM -->
-
-                            <?php endwhile; ?>
-                        <?php endif; ?>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</section>
-
+			</section> -->
 
 			<section id="services" class="vc_row pt-80 pb-80">
 				<div class="container">
