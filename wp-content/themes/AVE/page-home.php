@@ -321,14 +321,15 @@ $section_three_description = get_field('section_three_description');
 
 							<div class="liquid-portfolio-list">
 								<div id="virtus-pf-grid-1" class="row liquid-portfolio-list-row">
-									<div class="lqd-column col-md-4 col-sm-6 col-xs-12 px-0">
-										<?php if( have_rows('section_three_client_figure') ): $i = 0; ?>
+									<?php if( have_rows('section_three_client_figure') ): $i = 0; ?>
 										<?php while( have_rows('section_three_client_figure') ): the_row(); 
 											$i++;
 											$section_three_client_image = get_sub_field('section_three_client_image');
 											$section_three_client_title = get_sub_field('section_three_client_title');
 											$section_three_client_description = get_sub_field('section_three_client_description');
 										?>
+									<div class="lqd-column col-md-4 col-sm-6 col-xs-12 px-0">
+										
 										<div class="ld-pf-item ld-pf-light title-size-30 pf-details-inside pf-details-full pf-details-h-mid pf-details-v-mid pf-hover-masktext mb-0">
 											<div class="ld-pf-inner">
 												<div class="ld-pf-image">
@@ -351,10 +352,10 @@ $section_three_description = get_field('section_three_description');
 												<a href="#" class="liquid-overlay-link"></a>
 											</div><!-- /.ld-pf-inner -->
 										</div><!-- /.ld-pf-item -->
-											<?php endwhile; ?>
-          									<?php endif; ?>
+											
 									</div><!-- /.lqd-column col-md-4 col-sm-6 col-xs-12 -->
-
+												<?php endwhile; ?>
+          									<?php endif; ?>
 								</div><!-- /#virtus-pf-grid-1.row liquid-portfolio-list-row -->
 							</div><!-- /.liquid-portfolio-list -->
 
