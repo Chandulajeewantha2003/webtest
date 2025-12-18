@@ -17,7 +17,7 @@
 	
 	<link rel="shortcut icon" href="./favicon.png" />
 	
-	<title>Ave HTML Template</title>
+	<title>WEB TESTING</title>
 	<title><?php wp_title('|', true, 'right'); ?></title>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600,700" rel="stylesheet">
 	
