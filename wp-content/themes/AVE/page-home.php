@@ -309,7 +309,7 @@ $section_one_image_ = get_field('section_one_image_');
 											<div class="ld-pf-inner">
 												<div class="ld-pf-image">
 													<figure data-responsive-bg="true">
-														<img src="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-50.jpg" alt="Minnimalism">
+														<img src="<?php echo get_template_directory_uri(); ?>/assets/demo/misc/macbook.jpg" alt="Minnimalism">
 													</figure>
 												</div><!-- .ld-pf-image -->
 												<div class="ld-pf-bg bg-primary opacity-08"></div>
