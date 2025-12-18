@@ -296,9 +296,6 @@ $section_three_description = get_field('section_three_description');
 				</div><!-- /.container -->
 			</section>
 
-
-
-
 			<!-- Section Three -->
 		<section id="case-studies" class="vc_row pt-50 pb-80">
 
