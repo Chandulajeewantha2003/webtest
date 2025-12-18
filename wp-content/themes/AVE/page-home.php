@@ -278,7 +278,7 @@ $section_one_image_ = get_field('section_one_image_');
 				</div><!-- /.container -->
 			</section>
 
-			<!-- <section id="case-studies" class="vc_row pt-50 pb-80">
+			<section id="case-studies" class="vc_row pt-50 pb-80">
 
 				<div class="container">
 					<div class="row">
