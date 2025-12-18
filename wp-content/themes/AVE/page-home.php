@@ -300,7 +300,7 @@ $section_three_description = get_field('section_three_description');
 
 
 			<!-- Section Three -->
-			<section id="case-studies" class="vc_row pt-50 pb-80">
+		<section id="case-studies" class="vc_row pt-50 pb-80">
 
 				<div class="container">
 					<div class="row">
@@ -324,14 +324,20 @@ $section_three_description = get_field('section_three_description');
 
 							<div class="liquid-portfolio-list">
 								<div id="virtus-pf-grid-1" class="row liquid-portfolio-list-row">
-
+									<?php if( have_rows('section_three_client_figure') ): $i = 0; ?>
+										<?php while( have_rows('section_three_client_figure') ): the_row(); 
+											$i++;
+											$section_three_client_image = get_sub_field('section_three_client_image');
+											$section_three_client_title_ = get_sub_field('section_three_client_title_');
+											$section_three_client_description = get_sub_field('section_three_client_description');
+										?>
 									<div class="lqd-column col-md-4 col-sm-6 col-xs-12 px-0">
-
+										
 										<div class="ld-pf-item ld-pf-light title-size-30 pf-details-inside pf-details-full pf-details-h-mid pf-details-v-mid pf-hover-masktext mb-0">
 											<div class="ld-pf-inner">
 												<div class="ld-pf-image">
 													<figure data-responsive-bg="true">
-														<img src="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-50.jpg" alt="Minnimalism">
+														<img  src="<?php echo $section_three_client_image; ?>"/>
 													</figure>
 												</div><!-- .ld-pf-image -->
 												<div class="ld-pf-bg bg-primary opacity-08"></div>
@@ -340,153 +346,19 @@ $section_three_description = get_field('section_three_description');
 													data-custom-animations="true"
 													data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "startDelay": 0, "duration": 650, "delay": 100, "initValues": { "translateY": "150%" }, "animations": { "translateY": "0", "rotateX": 0 } }'>
 													<div class="ld-pf-details-inner">
-														<h3 class="ld-pf-title h4 font-weight-bold" data-split-text="true" data-split-options='{ "type": "words" }'>Minimalism</h3>
+														<h3 class="ld-pf-title h4 font-weight-bold" data-split-text="true" data-split-options='{ "type": "words" }'><?php echo $section_three_client_title_; ?></h3>
 														<div class="ld-pf-category size-lg">
-															<p data-split-text="true" data-split-options='{ "type": "words" }'>Branding Strategy</p>
+															<p data-split-text="true" data-split-options='{ "type": "words" }'><?php echo $section_three_client_description; ?></p>
 														</div><!-- /.ld-pf-category -->
 													</div><!-- /.ld-pf-details-inner -->
 												</div><!-- /.ld-pf-details -->
 												<a href="#" class="liquid-overlay-link"></a>
 											</div><!-- /.ld-pf-inner -->
 										</div><!-- /.ld-pf-item -->
-
+											
 									</div><!-- /.lqd-column col-md-4 col-sm-6 col-xs-12 -->
-
-									<div class="lqd-column col-md-4 col-sm-6 col-xs-12 px-0">
-
-										<div class="ld-pf-item ld-pf-light title-size-30 pf-details-inside pf-details-full pf-details-h-mid pf-details-v-mid pf-hover-masktext mb-0">
-											<div class="ld-pf-inner">
-												<div class="ld-pf-image">
-													<figure data-responsive-bg="true">
-														<img src="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-51.jpg" alt="Minnimalism">
-													</figure>
-												</div><!-- .ld-pf-image -->
-												<div class="ld-pf-bg bg-primary opacity-08"></div>
-												<div
-													class="ld-pf-details"
-													data-custom-animations="true"
-													data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "startDelay": 0, "duration": 650, "delay": 100, "initValues": { "translateY": "150%" }, "animations": { "translateY": "0", "rotateX": 0 } }'>
-													<div class="ld-pf-details-inner">
-														<h3 class="ld-pf-title h4 font-weight-bold" data-split-text="true" data-split-options='{ "type": "words" }'>Minimalism</h3>
-														<div class="ld-pf-category size-lg">
-															<p data-split-text="true" data-split-options='{ "type": "words" }'>Branding Strategy</p>
-														</div><!-- /.ld-pf-category -->
-													</div><!-- /.ld-pf-details-inner -->
-												</div><!-- /.ld-pf-details -->
-												<a href="#" class="liquid-overlay-link"></a>
-											</div><!-- /.ld-pf-inner -->
-										</div><!-- /.ld-pf-item -->
-
-									</div><!-- /.lqd-column col-md-4 col-sm-6 col-xs-12 -->
-
-									<div class="lqd-column col-md-4 col-sm-6 col-xs-12 px-0">
-
-										<div class="ld-pf-item ld-pf-light title-size-30 pf-details-inside pf-details-full pf-details-h-mid pf-details-v-mid pf-hover-masktext mb-0">
-											<div class="ld-pf-inner">
-												<div class="ld-pf-image">
-													<figure data-responsive-bg="true">
-														<img src="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-52.jpg" alt="Minnimalism">
-													</figure>
-												</div><!-- .ld-pf-image -->
-												<div class="ld-pf-bg bg-primary opacity-08"></div>
-												<div
-													class="ld-pf-details"
-													data-custom-animations="true"
-													data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "startDelay": 0, "duration": 650, "delay": 100, "initValues": { "translateY": "150%" }, "animations": { "translateY": "0", "rotateX": 0 } }'>
-													<div class="ld-pf-details-inner">
-														<h3 class="ld-pf-title h4 font-weight-bold" data-split-text="true" data-split-options='{ "type": "words" }'>Minimalism</h3>
-														<div class="ld-pf-category size-lg">
-															<p data-split-text="true" data-split-options='{ "type": "words" }'>Branding Strategy</p>
-														</div><!-- /.ld-pf-category -->
-													</div><!-- /.ld-pf-details-inner -->
-												</div><!-- /.ld-pf-details -->
-												<a href="#" class="liquid-overlay-link"></a>
-											</div><!-- /.ld-pf-inner -->
-										</div><!-- /.ld-pf-item -->
-
-									</div><!-- /.lqd-column col-md-4 col-sm-6 col-xs-12 -->
-
-									<div class="lqd-column col-md-4 col-sm-6 col-xs-12 px-0">
-
-										<div class="ld-pf-item ld-pf-light title-size-30 pf-details-inside pf-details-full pf-details-h-mid pf-details-v-mid pf-hover-masktext mb-0">
-											<div class="ld-pf-inner">
-												<div class="ld-pf-image">
-													<figure data-responsive-bg="true">
-														<img src="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-53.jpg" alt="Minnimalism">
-													</figure>
-												</div><!-- .ld-pf-image -->
-												<div class="ld-pf-bg bg-primary opacity-08"></div>
-												<div
-													class="ld-pf-details"
-													data-custom-animations="true"
-													data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "startDelay": 0, "duration": 650, "delay": 100, "initValues": { "translateY": "150%" }, "animations": { "translateY": "0", "rotateX": 0 } }'>
-													<div class="ld-pf-details-inner">
-														<h3 class="ld-pf-title h4 font-weight-bold" data-split-text="true" data-split-options='{ "type": "words" }'>Minimalism</h3>
-														<div class="ld-pf-category size-lg">
-															<p data-split-text="true" data-split-options='{ "type": "words" }'>Branding Strategy</p>
-														</div><!-- /.ld-pf-category -->
-													</div><!-- /.ld-pf-details-inner -->
-												</div><!-- /.ld-pf-details -->
-												<a href="#" class="liquid-overlay-link"></a>
-											</div><!-- /.ld-pf-inner -->
-										</div><!-- /.ld-pf-item -->
-
-									</div><!-- /.lqd-column col-md-4 col-sm-6 col-xs-12 -->
-
-									<div class="lqd-column col-md-4 col-sm-6 col-xs-12 px-0">
-
-										<div class="ld-pf-item ld-pf-light title-size-30 pf-details-inside pf-details-full pf-details-h-mid pf-details-v-mid pf-hover-masktext mb-0">
-											<div class="ld-pf-inner">
-												<div class="ld-pf-image">
-													<figure data-responsive-bg="true">
-														<img src="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-54.jpg" alt="Minnimalism">
-													</figure>
-												</div><!-- .ld-pf-image -->
-												<div class="ld-pf-bg bg-primary opacity-08"></div>
-												<div
-													class="ld-pf-details"
-													data-custom-animations="true"
-													data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "startDelay": 0, "duration": 650, "delay": 100, "initValues": { "translateY": "150%" }, "animations": { "translateY": "0", "rotateX": 0 } }'>
-													<div class="ld-pf-details-inner">
-														<h3 class="ld-pf-title h4 font-weight-bold" data-split-text="true" data-split-options='{ "type": "words" }'>Minimalism</h3>
-														<div class="ld-pf-category size-lg">
-															<p data-split-text="true" data-split-options='{ "type": "words" }'>Branding Strategy</p>
-														</div><!-- /.ld-pf-category -->
-													</div><!-- /.ld-pf-details-inner -->
-												</div><!-- /.ld-pf-details -->
-												<a href="#" class="liquid-overlay-link"></a>
-											</div><!-- /.ld-pf-inner -->
-										</div><!-- /.ld-pf-item -->
-
-									</div><!-- /.lqd-column col-md-4 col-sm-6 col-xs-12 -->
-
-									<div class="lqd-column col-md-4 col-sm-6 col-xs-12 px-0">
-
-										<div class="ld-pf-item ld-pf-light title-size-30 pf-details-inside pf-details-full pf-details-h-mid pf-details-v-mid pf-hover-masktext mb-0">
-											<div class="ld-pf-inner">
-												<div class="ld-pf-image">
-													<figure data-responsive-bg="true">
-														<img src="<?php echo get_template_directory_uri(); ?>/assets/demo/portfolio/pf-55.jpg" alt="Minnimalism">
-													</figure>
-												</div><!-- .ld-pf-image -->
-												<div class="ld-pf-bg bg-primary opacity-08"></div>
-												<div
-													class="ld-pf-details"
-													data-custom-animations="true"
-													data-ca-options='{ "triggerHandler": "mouseenter", "triggerTarget": ".ld-pf-item", "triggerRelation": "closest", "offTriggerHandler": "mouseleave", "animationTarget": ".split-inner", "startDelay": 0, "duration": 650, "delay": 100, "initValues": { "translateY": "150%" }, "animations": { "translateY": "0", "rotateX": 0 } }'>
-													<div class="ld-pf-details-inner">
-														<h3 class="ld-pf-title h4 font-weight-bold" data-split-text="true" data-split-options='{ "type": "words" }'>Minimalism</h3>
-														<div class="ld-pf-category size-lg">
-															<p data-split-text="true" data-split-options='{ "type": "words" }'>Branding Strategy</p>
-														</div><!-- /.ld-pf-category -->
-													</div><!-- /.ld-pf-details-inner -->
-												</div><!-- /.ld-pf-details -->
-												<a href="#" class="liquid-overlay-link"></a>
-											</div><!-- /.ld-pf-inner -->
-										</div><!-- /.ld-pf-item -->
-
-									</div><!-- /.lqd-column col-md-4 col-sm-6 col-xs-12 -->
-
+												<?php endwhile; ?>
+          									<?php endif; ?>
 								</div><!-- /#virtus-pf-grid-1.row liquid-portfolio-list-row -->
 							</div><!-- /.liquid-portfolio-list -->
 
@@ -495,7 +367,7 @@ $section_three_description = get_field('section_three_description');
 					</div><!-- /.row -->
 				</div><!-- /.container-fluid -->
 
-			</section>
+			</section> 
 			
 
 			<section id="services" class="vc_row pt-80 pb-80">
