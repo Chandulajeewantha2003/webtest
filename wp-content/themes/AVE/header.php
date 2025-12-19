@@ -116,7 +116,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#blog">
+											<a href="<?php bloginfo('url'); ?>/blog">
 												<span class="link-icon"></span>
 												<span class="link-txt">
 													<span class="link-ext"></span>
@@ -124,6 +124,8 @@
 												</span>
 											</a>
 										</li>
+
+
 										<li>
 											<a href="#contact">
 												<span class="link-icon"></span>
